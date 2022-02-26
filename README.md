@@ -2,7 +2,7 @@
 
 ### To deploy 
 
-Open Remix 
+Open [Remix](https://remix.ethereum.org/) and import the contract.
 
 replace imports with:
 ```solidity
