@@ -1,3 +1,18 @@
+# HelpToken 
+
+### To deploy 
+
+Open Remix 
+
+replace imports with:
+```solidity
+import "@openzeppelin/contracts@4.5.0/token/ERC721/ERC721.sol";
+import "@openzeppelin/contracts@4.5.0/access/Ownable.sol";
+import "@openzeppelin/contracts@4.5.0/utils/Counters.sol";
+```
+compile. 
+deploy.
+
 # Basic Sample Hardhat Project
 
 This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
