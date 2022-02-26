@@ -12,7 +12,7 @@ contract HelpToken is ERC721, Ownable {
     uint16 private _totalSupply = 10000; // 10,000 tokens
     uint public tokenValue = 1e16 wei; // 0.01 ether
 
-    constructor(address owner_) ERC721("MyToken", "MTK") {
+    constructor(string memory name_, string memory symbol_, address owner_) ERC721(name_, symbol_) {
         _transferOwnership(owner_);
     }
 
