@@ -17,8 +17,8 @@ contract HelpToken is ERC721, Ownable {
     }
 
     function create(uint16 count) public payable {
-        require(count <= _totalSupply - _tokenIdCounter.current(), "Not enough tokens");
-        require(msg.value >= tokenValue * count, "Wrong token value");
+        require(count <= _totalSupply - _tokenIdCounter.current(), "Not enough free tokens");
+        require(msg.value >= tokenValue * count, "Not enough ETH to mint token(s)");
 
         for (uint16 i = 0; i < count; i++) {
             safeMint(msg.sender);
