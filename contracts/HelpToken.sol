@@ -18,7 +18,7 @@ contract HelpToken is ERC721, ERC721URIStorage, Ownable {
     }
 
     function _baseURI() internal pure override returns (string memory) {
-        return "https://ipfs.io/ipfs/QmZjuWFrnf6upnQnhRdM5uYCDUfPu6nt9ehHuVaMdBtujf";
+        return "https://ipfs.io/ipfs/QmY55mvuwrSdHhZisdH82Unp4HKzzBFdEHFnw8AuLGQNum";
     }
 
     function create(uint16 count) public payable {
