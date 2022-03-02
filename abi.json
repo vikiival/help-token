@@ -10,11 +10,6 @@
 				"internalType": "string",
 				"name": "symbol_",
 				"type": "string"
-			},
-			{
-				"internalType": "address",
-				"name": "owner_",
-				"type": "address"
 			}
 		],
 		"stateMutability": "nonpayable",
