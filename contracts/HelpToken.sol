@@ -13,9 +13,7 @@ contract HelpToken is ERC721, ERC721URIStorage, Ownable {
     uint16 private _totalSupply = 10000; // 10,000 tokens
     uint public tokenValue = 1e16 wei; // 0.01 ether
 
-    constructor(string memory name_, string memory symbol_, address owner_) ERC721(name_, symbol_) {
-        _transferOwnership(owner_);
-    }
+    constructor(string memory name_, string memory symbol_) ERC721(name_, symbol_) {}
 
     function _baseURI() internal pure override returns (string memory) {
         return "https://ipfs.io/ipfs/QmY55mvuwrSdHhZisdH82Unp4HKzzBFdEHFnw8AuLGQNum";
