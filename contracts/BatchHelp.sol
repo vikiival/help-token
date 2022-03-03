@@ -19,7 +19,7 @@ contract HelpToken is ERC1155, Ownable {
     }
 
     function create(uint16 count) external payable {
-        require(count  <= _totalSupply - alreadyMinted, "Not enough fee tokens");
+        require(count  <= _totalSupply - alreadyMinted, "No tokens available");
         require(msg.value >= tokenValue * count, "Not enough ETH sent");
         mint(msg.sender, 0, count);
         alreadyMinted += count;
